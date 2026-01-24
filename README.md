@@ -1,4 +1,4 @@
-# 📚 Wikipedia Vital Articles Archiver
+# 📚 Restart Society: Wikipedia Vital Articles Archiver
 
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg) ![License](https://img.shields.io/badge/License-CC%20BY--SA%203.0-lightgrey.svg) ![Status](https://img.shields.io/badge/Status-Automated-green.svg)
 
