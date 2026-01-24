@@ -1,4 +1,4 @@
-# 📚 Restart  Society: Wikipedia Vital Articles Archiver (Level 3)
+# 📚 Restart  Society: Wikipedia Vital Articles Archiver 
 
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg) ![Articles](https://img.shields.io/badge/Articles-1000-orange.svg) ![Status](https://img.shields.io/badge/Status-Automated-green.svg)
 
