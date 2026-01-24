@@ -38,7 +38,7 @@ Before running, update these variables inside `vital_download.py`:
 ### 3️⃣ Schedule Daily Tasks
 To automate this on **PythonAnywhere**:
 1.  Navigate to the **Tasks** tab in your dashboard.
-2.  Under **Scheduled Tasks**, set the frequency to **Daily** and choose a time (e.g., `03:00`).
+2.  Under **Scheduled Tasks**, set the frequency to **Weekly** and choose a time (e.g., `03:00`).
 3.  Input the following command:
     `python3 /home/yourusername/vital_download.py`
 4.  Click **Create**.
