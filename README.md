@@ -3,7 +3,7 @@
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg) ![License](https://img.shields.io/badge/License-CC%20BY--SA%203.0-lightgrey.svg) ![Status](https://img.shields.io/badge/Status-Automated-green.svg)
 
 <p align="center">
-  <img src="restart(1).png" alt="Restart Society">
+  <img src="restart (1).png" alt="Restart Society">
 </p>
 An automated tool designed to monitor, download, and compress the 100 **Level 2 Vital Articles** from Wikipedia. Optimized for **PythonAnywhere**, this script ensures you always have the latest version of humanity's most essential knowledge while respecting storage limits and API etiquette.
 
