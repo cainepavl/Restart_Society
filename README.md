@@ -48,6 +48,15 @@ Set this task to run **Weekly** or **Monthly** in the PythonAnywhere Tasks dashb
 └── vital_download.py             # 🐍 Automation script
 ```
 
+## 🧪 Running Tests
+This project includes a test suite to verify connectivity, scraping logic, and compression without exhausting your Wikipedia API limits or disk space.
+
+To run the tests:
+```bash
+python3 test.py
+```
+*The test script uses `unittest` and `mock` to simulate Wikipedia responses, ensuring your logic is solid before you start a massive 1,000-article download.*
+
 ---
 
 ## ✨ Safety & Efficiency
