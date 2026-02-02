@@ -29,11 +29,11 @@ Automated system to monitor, download, and compress the 1,000 most essential art
 
 A surgical tool for verifying the `bh=` tag in email signatures. It implements **Relaxed Body Canonicalization** per **RFC 6376**.
 
-### ✨ RFC 6376 Compliance Features
+<!--### ✨ RFC 6376 Compliance Features 
 * **Horizontal WSP Reduction**: Uses hex-encoded regex (`[\x20\x09]+`) to target only standard space and tab characters within lines.
 * **Line Stripping**: Removes all horizontal WSP from the end of each line before hashing.
 * **CRLF Standardization**: Normalizes all line endings to `\r\n`.
-* **Trailing Truncation**: Correctly removes empty trailing lines while preserving the mandatory final CRLF.
+* **Trailing Truncation**: Correctly removes empty trailing lines while preserving the mandatory final CRLF. -->
 
 
 
