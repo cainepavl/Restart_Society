@@ -6,23 +6,23 @@ An automated tool designed to monitor, download, and compress the **1,000 Level 
 
 ## Table of Contents
 
--[🛠️ Technical Overview](technical-overview)
+- [🛠️ Technical Overview](technical-overview)
 
--[🚀 Deployment Guide](deployment-guide)
+- [🚀 Deployment Guide](deployment-guide)
 
--[1️⃣ Setup Environment](setup-environment)
+- [1️⃣ Setup Environment](setup-environment)
 
--[2️⃣ Configure Script](configure-script)
+- [2️⃣ Configure Script](configure-script)
 
--[3️⃣ Schedule](schedule)
+- [3️⃣ Schedule](schedule)
 
--[📂 File Structure](file-structure)
+- [📂 File Structure](file-structure)
 
--[🧪 Running Tests](running-tests)
+- [🧪 Running Tests](running-tests)
 
--[✨ Safety & Efficiency](safety-efficiency)
+- [✨ Safety & Efficiency](safety-efficiency)
 
--[📄 License](license)
+- [📄 License](license)
 
 
 <p align="center">
