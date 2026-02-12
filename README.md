@@ -6,7 +6,7 @@ An automated tool designed to monitor, download, and compress the **1,000 Level 
 
 ## Table of Contents
 
-- [Technical Overview](technical-overview)
+- [Technical Overview](#technical-overview)
 
 - [🚀 Deployment Guide](deployment-guide)
 
