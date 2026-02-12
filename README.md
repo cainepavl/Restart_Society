@@ -4,6 +4,27 @@
 
 An automated tool designed to monitor, download, and compress the **1,000 Level 3 Vital Articles** from Wikipedia. This collection represents the core foundation of human knowledge. Optimized for **PythonAnywhere**, this script balances archival depth with storage efficiency.
 
+## Table of Contents
+
+-[🛠️ Technical Overview](technical-overview)
+
+-[🚀 Deployment Guide](deployment-guide)
+
+-[1️⃣ Setup Environment](setup-environment)
+
+-[2️⃣ Configure Script](configure-script)
+
+-[3️⃣ Schedule](schedule)
+
+-[📂 File Structure](file-structure)
+
+-[🧪 Running Tests](running-tests)
+
+-[✨ Safety & Efficiency](safety-efficiency)
+
+-[📄 License](license)
+
+
 <p align="center">
   <img src="restart.png" alt="Restarting Society" width="600">
 </p>
