@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import json
+import re
 import time
 import zipfile
 import shutil
@@ -25,7 +26,9 @@ def check_disk_space():
 
 def get_article_list():
     """Scrapes the 1,000 Level 3 articles."""
-    response = requests.get(VITAL_LIST_URL, headers={"User-Agent": USER_AGENT})
+    # timeout prevents the scheduled task from hanging indefinitely if
+    # Wikipedia is slow or unreachable
+    response = requests.get(VITAL_LIST_URL, headers={"User-Agent": USER_AGENT}, timeout=15)
     soup = BeautifulSoup(response.text, 'html.parser')
     articles = []
     content = soup.find(id="mw-content-text")
@@ -37,6 +40,21 @@ def get_article_list():
                 articles.append(title)
     # Level 3 lists exactly 1000 articles
     return list(dict.fromkeys(articles))[:1000]
+
+def safe_filename(title):
+    """
+    Build a filesystem-safe filename from a scraped article title.
+
+    Titles come from parsing Wikipedia's own HTML, but we still don't fully
+    trust them as path components -- replacing only '/' and ' ' would leave
+    other path-breaking or traversal-enabling characters untouched. Strip
+    everything except alphanumerics, dashes, and underscores so the result
+    can never escape TEMP_DIR.
+    """
+    safe = title.replace(' ', '_')
+    safe = re.sub(r'[^A-Za-z0-9_-]', '', safe)
+    return safe + ".html"
+
 
 def download_article(title):
     api_url = f"https://en.wikipedia.org/api/rest_v1/page/html/{title.replace(' ', '_')}"
@@ -72,7 +90,7 @@ def run_task():
         content, etag = download_article(title)
         
         if content and (title not in history or history[title] != etag):
-            filename = f"{title.replace('/', '_').replace(' ', '_')}.html"
+            filename = safe_filename(title)
             with open(os.path.join(TEMP_DIR, filename), "w", encoding="utf-8") as f:
                 f.write(content)
             new_history[title] = etag
